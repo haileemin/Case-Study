@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="header">
+        <header>
+            <div>
+                <div class="form">
+                    <h2>Đăng kí sản phẩm</h2>
+                    <form id="formProduct">
+                        <input type="hidden" name="idProduct" id="idProduct">
+                        <div class="form-input">
+                            <label for="image" class="form-label">Link image</label>
+                            <input type="link" class="form-control" name="image" id="image">
+                        </div>
+                        <div class="form-input">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="name" class="form-control" name="name" id="name">
+                        </div>
+                        <div class="form-input">
+                            <label for="price" class="form-label">Price</label>
+                            <input type="number" class="form-control" name="price" id="price">
+                        </div>
+                        <button type="button" class="btn btn-create" onclick="submitForm()">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+                <h1>Shopping</h1>
+            </div>
+            <div class="shopping">
+                <i class="fa-solid fa-cart-arrow-down"></i>
+                <span class="quantity">0</span>
+            </div>
+        </header>
+    </div>
+    <div class="container">
+        <div class="listDrink" id="listDrink">
+            <h2>List Drink</h2>
+            <Script src="/script.js"></Script>
+        </div>
+        <div class="buyDrink" id="buyDrink">
+            <h1>shop</h1>
+            <Script src="/script.js"></Script>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+</body>
+</html>
